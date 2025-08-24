@@ -77,4 +77,4 @@ python torrent_shutdown.py
 - **Multiple Checks**: Requires sustained inactivity before triggering shutdown
 - **Minimum Time**: Waits at least 2 minutes of inactivity before considering download complete
 
-- In future managements I am planning to update it with system tray feature, Somehow it react to electricity and then shutsdown and Timed Shutdowns
+## In future managements I am planning to update it with system tray feature, Somehow it reacts to electricity and then Shutdown and Timed Shutdown.
