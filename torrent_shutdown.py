@@ -13,7 +13,7 @@ class TorrentShutdownApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Auto Shutdown - Torrent Monitor")
-        self.root.geometry("500x400")
+        self.root.geometry("445x400")
         self.root.resizable(False, False)
         
         # Variables
@@ -32,9 +32,6 @@ class TorrentShutdownApp:
         main_frame = ttk.Frame(self.root, padding="10")
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
         
-        # Title
-        title_label = ttk.Label(main_frame, text="Torrent Auto Shutdown", font=("Arial", 16, "bold"))
-        title_label.grid(row=0, column=0, columnspan=3, pady=(0, 20))
         
         # Download path selection
         ttk.Label(main_frame, text="Download Folder:").grid(row=1, column=0, sticky=tk.W, pady=5)
