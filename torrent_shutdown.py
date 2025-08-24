@@ -13,7 +13,7 @@ class TorrentShutdownApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Auto Shutdown - Torrent Monitor")
-        self.root.geometry("445x400")
+        self.root.geometry("445x340")
         self.root.resizable(False, False)
         
         # Variables
@@ -74,7 +74,7 @@ class TorrentShutdownApp:
         
         # Control buttons
         button_frame = ttk.Frame(main_frame)
-        button_frame.grid(row=4, column=0, columnspan=3, pady=20)
+        button_frame.grid(row=4, column=0, columnspan=3, pady=10)
         
         self.start_btn = ttk.Button(button_frame, text="Start Monitoring", command=self.start_monitoring)
         self.start_btn.grid(row=0, column=0, padx=5)
